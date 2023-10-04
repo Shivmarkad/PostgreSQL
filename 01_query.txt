@@ -59,3 +59,12 @@ ALTER COLUMN column_name TYPE VARCHAR(allowed_characters);
 ALTER TABLE cars
 ALTER COLUMN year TYPE VARCHAR(4);
 
+// DROP COLUMN - to remove column from the table
+
+ALTER TABLE table_name
+DROP COLUMN column_name;
+
+//ex
+
+ALTER TABLE cars
+DROP COLUMN color;
