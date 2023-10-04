@@ -1,3 +1,7 @@
+TRIGGERS
+STORE PROCEDURE
+CONSTRAINS
+
 //to list database
 \l
 
@@ -14,4 +18,12 @@ CREATE DATABASE database_name;
   year INT
 );
 
+//to add entry in the table
+INSERT INTO table_name (fields)
+VALUES (values-corresponding to fields)
+
+//ex
+
+INSERT INTO cars (brand, model, year)
+VALUES ("Tata", 'tata-nexon', 2017)
 
