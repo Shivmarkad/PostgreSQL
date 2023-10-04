@@ -48,3 +48,14 @@ ADD COLUMN color VARCHAR(30);
 UPDATE cars
 SET color = 'red'
 WHERE model = 'tata-nexon';
+
+//to change datatype or size of a table column use ALTER COLUMN
+
+ALTER TABLE table_name
+ALTER COLUMN column_name TYPE VARCHAR(allowed_characters);
+
+//ex 
+
+ALTER TABLE cars
+ALTER COLUMN year TYPE VARCHAR(4);
+
