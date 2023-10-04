@@ -35,3 +35,10 @@ SELECT brand , model FROM cars;
 //select all the columns
 SELECT * FROM cars;
 
+//add column in the table
+ALTER TABLE table_name
+ADD COLUMN column_name VARCHAR(num_characters)
+
+//ex-
+ALTER TABLE cars
+ADD COLUMN color VARCHAR(30);
