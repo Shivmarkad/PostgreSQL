@@ -42,3 +42,9 @@ ADD COLUMN column_name VARCHAR(num_characters)
 //ex-
 ALTER TABLE cars
 ADD COLUMN color VARCHAR(30);
+
+//UPDATE entry in the table 
+//WHERE clouse should be mentioned every time if we omit then all the entries in the table will updated
+UPDATE cars
+SET color = 'red'
+WHERE model = 'tata-nexon';
