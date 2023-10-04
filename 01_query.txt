@@ -70,7 +70,7 @@ ALTER TABLE cars
 DROP COLUMN color;
 
 //delete records from the table
-
+//if we omit the WHERE clouse all the records from the table will be deleted
 DELETE FROM table_name
 WHERE column_name_to_delete_entry_from = 'entry'
 
@@ -78,3 +78,10 @@ WHERE column_name_to_delete_entry_from = 'entry'
 
 DELETE FROM cars
 WHERE brand = 'Tata'
+
+//TRUNCATE TABLE - will delete all the records in the table
+
+TRUNCATE TABLE table_name;
+
+//eg
+TRUNCATE TABLE cars;
