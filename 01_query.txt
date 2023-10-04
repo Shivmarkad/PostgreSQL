@@ -27,3 +27,11 @@ VALUES (values-corresponding to fields)
 INSERT INTO cars (brand, model, year)
 VALUES ("Tata", 'tata-nexon', 2017)
 
+//fetch data from table
+
+//select with column name
+SELECT brand , model FROM cars;
+
+//select all the columns
+SELECT * FROM cars;
+
