@@ -68,3 +68,13 @@ DROP COLUMN column_name;
 
 ALTER TABLE cars
 DROP COLUMN color;
+
+//delete records from the table
+
+DELETE FROM table_name
+WHERE column_name_to_delete_entry_from = 'entry'
+
+//eg
+
+DELETE FROM cars
+WHERE brand = 'Tata'
