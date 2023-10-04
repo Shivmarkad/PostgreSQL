@@ -85,3 +85,7 @@ TRUNCATE TABLE table_name;
 
 //eg
 TRUNCATE TABLE cars;
+
+//DROP table - will drop the existing table from the database
+
+DROP TABLE cars;
