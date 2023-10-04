@@ -1,0 +1,17 @@
+//to list database
+\l
+
+//to create new database
+CREATE DATABASE database_name;
+
+//to connect to database
+\c database_name
+
+//to create new table in database
+ CREATE TABLE cars (
+  brand VARCHAR(255),
+  model VARCHAR(255),
+  year INT
+);
+
+
