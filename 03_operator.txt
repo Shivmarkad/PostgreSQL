@@ -1,0 +1,21 @@
+//LIKE- used in WHERE clause to search for specific pattern
+// LIKE - is case sensitive
+
+//% at end will check character starts with 
+
+SELECT * FROM table_name
+WHERE column_name LIKE 'A%';
+
+//eg
+
+SELECT * FROM student
+WHERE name LIKE 'S%';
+
+-- will return records of students whose name starts with 'S'
+
+SELECT * FROM student
+WHERE name LIKE 'S%';
+
+-- will return records of students whose name contains 'S'
+
+
