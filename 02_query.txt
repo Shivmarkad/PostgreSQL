@@ -1,0 +1,15 @@
+//ORDER BY - use to sort selected records with the column name in ascending or descending
+
+//FOR ascending 
+
+SELECT * FROM table_name
+ORDER BY column_name;
+
+//FOR descending
+
+SELECT * FROM table_name
+ORDER BY column_name  DESC;
+
+//DISTINCT - return only different values in records 
+
+SELECT DISTINCT column_name FROM table_name;
