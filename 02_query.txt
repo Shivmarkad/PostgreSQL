@@ -13,3 +13,54 @@ ORDER BY column_name  DESC;
 //DISTINCT - return only different values in records 
 
 SELECT DISTINCT column_name FROM table_name;
+
+//LIMIT - clause will limit maximum number of records to return
+
+SELECT * FROM cars
+LIMIT 12;
+
+//OFFSET - used to specify where to start selecting the records
+
+SELECT * FROM cars
+LIMIT 12 OFFSET 5;          //here will start selecting from 6
+
+//MIN() - return smallest values with selected column
+
+SELECT MIN(column_name)
+FROM table_name;
+
+SELECT MIN(age) FROM student;
+
+//MAX() - return largest values with selected column
+
+SELECT MAX(column_name)
+FROM table_name;
+
+
+SELECT MAX(age)
+FROM student;
+
+
+//COUNT() - return total records in that column
+
+SELECT COUNT(column_name) FROM table_name
+WHERE column_name = value;
+
+//eg
+SELECT COUNT(marks) FROM student
+WHERE marks >= 80;
+
+//SUM() - return sum of numeric column
+
+SELECT SUM(numeric_column) FROM table_name;
+
+//AVG() -  return average of that column
+
+SELECT AVG(numeric_column) from table_name;
+
+//round to 2 decimal
+SELECT AVG(numeric_column)::NUMERIC(10,2) FROM table_name;
+
+//eg
+SELECT AVG(marks)::NUMERIC(10,2) FROM student;
+
