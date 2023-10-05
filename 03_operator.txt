@@ -14,8 +14,21 @@ WHERE name LIKE 'S%';
 -- will return records of students whose name starts with 'S'
 
 SELECT * FROM student
-WHERE name LIKE 'S%';
+WHERE name LIKE '%S%';
 
 -- will return records of students whose name contains 'S'
 
+//% at start will check records that ends with specific letter or phrase
+
+SELECT * FROM student
+WHERE name LIKE '%K';
+
+--return records having name which contains K at the end
+
+//ILIKE - is case insensitive search
+
+SELECT * FROM student
+WHERE name ILIKE '%K%';
+
+--return records having name which contains K or k
 
