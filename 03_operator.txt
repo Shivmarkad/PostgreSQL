@@ -32,3 +32,16 @@ WHERE name ILIKE '%K%';
 
 --return records having name which contains K or k
 
+//IN - allows to specify list of possible values in WHERE clause
+
+SELECT * FROM student
+WHERE age IN (23,19, 21);
+
+--return all students with age 23, 19 and 21 
+
+//NOT before IN operator will exclude records that has values in list
+
+SELECT * FROM student
+WHERE age NOT IN (23,19, 21);
+
+--return all students whose age is not 23, 19 and 21 
