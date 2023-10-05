@@ -5,7 +5,19 @@
     RIGHT JOIN: Returns all records from the right table, and the matched records from the left table
     FULL JOIN: Returns all records when there is a match in either left or right table
 
-//INNER JOIN - WILL SELECT all records from left table and matching records from right table
+//INNER JOIN - Will SELECT only records from left table and right table matching 
 
 SELECT name, age, marks FROM student 
 INNER JOIN score_card ON student.student_id = score_card.student_id;
+
+//LEFT JOIN: - WILL SELECT all records from left table and matching records from right table
+
+SELECT name, age, marks 
+FROM student 
+LEFT JOIN score_card ON student.student_id = score_card.student_id;
+
+//RIGHT JOIN - WILL SELECT all records from right table and matching records from left table
+
+SELECT name, age, marks 
+FROM student 
+RIGHT JOIN score_card ON student.student_id = score_card.student_id;
