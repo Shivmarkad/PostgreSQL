@@ -21,3 +21,34 @@ LEFT JOIN score_card ON student.student_id = score_card.student_id;
 SELECT name, age, marks 
 FROM student 
 RIGHT JOIN score_card ON student.student_id = score_card.student_id;
+
+//GROUP BY
+The GROUP BY clause is used to group together those rows in a table 
+that have the same values in all the columns listed.
+
+select name, age, count(student_id) from student GROUP BY name,age order by age;
+
+
+Result:-
+
+  name  | age | count
+--------+-----+-------
+ sachin |  21 | 	1
+ ravi     |  22 | 	1
+ shiv     |  24 | 	1
+ Ramesh |  26 | 	1
+
+
+//HAVING
+
+The HAVING clause was added to SQL because the WHERE clause cannot be used with aggregate functions.
+
+select name, age, count(student_id) from student group by name,age HAVING age >22;
+
+Result:
+
+  name  | age | count
+--------+-----+-------
+ shiv        |  24 | 	 1
+ Ramesh |  26 | 	1
+
