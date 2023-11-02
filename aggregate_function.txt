@@ -1,0 +1,56 @@
+// order by - used to sort the result by ascending or descending order
+
+ select * from cars order by color desc;
+
+ brand  | model  | year | color | id
+--------+--------+------+-------+----
+ Maruti | Suzuki | 2018 | White |  1
+ Maruti | Suzuki | 2018 | White | 17
+ Maruti | Suzuki | 2018 | White | 18
+ Maruti | Suzuki | 2018 | White | 19
+ Maruti | Suzuki | 2018 | White | 20
+ Maruti | Suzuki | 2017 | White | 21
+ Tata   | suzuki | 2015 | Red   | 22
+ Tata   | Nano   | 2010 | Blue  | 23
+(23 rows)
+
+// max(<column_name>) gets the maximum entry in the provided column
+
+ select max(year) from cars;
+ max
+------
+ 2018
+(1 row)
+
+// min(<column_name>) gets the minimum entry in the provided column
+
+ select min(year) from cars;
+ min
+------
+ 2010
+(1 row)
+
+
+// count(<column_name>) counts the number of rows that matches criterion
+
+select count(year) from cars where year = 2018;
+ count
+-------
+    20
+(1 row)
+
+// sum(<column_name>) returns the sum of numeric column
+
+select sum(year) from cars;
+  sum
+-------
+ 46402
+(1 row)
+
+// avg(<column_name>) return average value of a numeric column
+
+ select avg(year) from cars;
+          avg
+-----------------------
+ 2017.4782608695652174
+(1 row)

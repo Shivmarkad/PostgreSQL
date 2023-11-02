@@ -1,0 +1,49 @@
+
+// LIKE - operator is used in a WHERE clause to search for a specified pattern in a column.
+// It is case sensitive
+// '%<character>%' - selects all records that contains the character column
+
+select * from cars where model like '%u%';
+
+ brand  | model  | year | color | id
+--------+--------+------+-------+----
+ Maruti | Suzuki | 2018 | White |  1
+ Maruti | Suzuki | 2018 | White |  2
+ Maruti | Suzuki | 2017 | White | 21
+ Tata   | suzuki | 2015 | Red   | 22
+(22 rows)
+
+// '%<char>' - selects records that ends with char in a column
+
+select * from cars where brand like '%a';
+
+ brand | model  | year | color | id
+-------+--------+------+-------+----
+ Tata  | suzuki | 2015 | Red   | 22
+ Tata  | Nano   | 2010 | Blue  | 23
+(2 rows)
+
+// '<char>%'  - selects records that starts with char in a column
+
+ select * from cars where brand like 'T%';
+
+ brand | model  | year | color | id
+-------+--------+------+-------+----
+ Tata  | suzuki | 2015 | Red   | 22
+ Tata  | Nano   | 2010 | Blue  | 23
+(2 rows)
+
+// ILIKE is incasesensitive
+
+select * from cars where model ilike 's%';
+    
+ brand  | model  | year | color | id
+--------+--------+------+-------+----
+ Maruti | Suzuki | 2018 | White |  1
+ Maruti | Suzuki | 2018 | White | 18
+ Maruti | Suzuki | 2018 | White | 19
+ Maruti | Suzuki | 2018 | White | 20
+ Maruti | Suzuki | 2017 | White | 21
+ Tata   | suzuki | 2015 | Red   | 22
+(22 rows)
+
