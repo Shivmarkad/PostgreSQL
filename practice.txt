@@ -1,0 +1,31 @@
+// to create database 
+
+CREATE DATABASE <database-name>;
+
+// to connect to database 
+
+\c <database-name>
+
+// to create table
+
+CREATE TABLE <table-name> (<columne-name1> <type>, <column_name2> <type>);
+
+// to add entries in table
+
+INSERT INTO <table-name> (<column_name1>, <column_name2>) 
+VALUES (<value> , <value>);
+
+// to remove entries from the table 
+
+DELETE FROM <table-name>
+WHERE <column_name> = <entry>;
+
+// to select all entries in the table 
+
+SELECT * FROM <table_name>;
+
+// select using where clause to add condition select only that entries which passes that condition
+
+SELECT * FROM <table_name>
+WHERE <column_name> = 'entry';
+
